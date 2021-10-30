@@ -67,7 +67,7 @@
 .main__left__light {
     font-size: 34px;
     position: absolute;
-    right: 42%;
+    right: 38%;
     top: 120px;
 }
 
@@ -139,7 +139,7 @@
 }
 .footer__introduce-des{
     width: 186px;
-    margin-top: 40px;
+    margin-top: 24px;
     color: #888;
 }
 .footer__teacher{
@@ -150,8 +150,8 @@
     cursor: pointer;
 }
 .footer__teacher__img{
-    width: 140px;
-    height: 160px;
+    width: 116px;
+    height: 138px;
     border-radius: 8px;
 
 }
@@ -181,8 +181,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;    
-    top: 65px;
-    right: 128px;
+    top: 56px;
+    right: 104px;
     z-index: 2;
 }
 
