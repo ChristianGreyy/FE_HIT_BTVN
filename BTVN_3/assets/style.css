@@ -163,6 +163,7 @@
     color: white;
     font-weight: bold;
     text-shadow: 0 0 1px #888;
+    font-size: 14px;
 }
 
 .footer__teacher--first.footer__teacher{
