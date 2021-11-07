@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+.row{
+    justify-content:center;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(100, 99, 99);
+    padding-top: 40px;
+
+}
+
+.app-titles{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+.app-date{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.row{
+
+}
+.col-xl-6{
+
+}
+.app-left{
+    color: white;
+}
+.app-left__left{
+    display: flex;
+}
+.app-left__left__list{
+    list-style: none;
+    padding-left: 0;
+}
+.app-left__left__list-items{
+    list-style: none;
+}
+
+.app-left__right {
+    display: flex;
+}
+.app-left__right__time,
+.app-left__left__list-items__time{
+    font-weight: bold;
+    padding-bottom: 12px;
+    padding-top: 14px;
+
+}
+.app-left__list-items__des,
+.app-left__left__list-items__des{
+    font-size: 15px;
+}
+.app-left__left__list-items__des__line{
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+    height: 1px;
+}
+.app-left__left__line{
+    border-left: 1px solid white;
+    height: 100%;
+    margin-left: 14px;
+}
+
+.app-left__right__line {
+    border-left: 1px solid white;
+    height: 100%;
+    margin-left: 18px;
+}
+.app-right{
+
+}
+.app-left__right__img {
+    width: 100%;
+    height: 250px;
+    margin-top: 24px;
+}
+.app.container{
+
+}
+.col-xl-6.app-left{
+
+}
+.app-right{
+    display: flex;
+    color: white;
+}
+
+    /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 739px) { 
+    .app-left__right__line {
+        display: none;
+    }
+
+    .app-left__left__line {
+        display: none;
+
+    }
+    .app{
+        width: 100%;
+        height: max-content;
+        background-color:rgb(100, 99, 99);
+        padding-top: 40px;
+    
+    }
+    .app-left__left__list-items__des__line{
+        width: 100%;
+    }
+    .app-left__left__list {
+        width: 100%;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+ @media (min-width: 740px) and (max-width: 1023px) { 
+    .app-left__right__line {
+        display: none;
+    }
+
+    .app-left__left__line {
+        margin-left: 74px;
+    }
+    .app{
+        width: 100%;
+        height: max-content;
+        background-color:rgb(100, 99, 99);
+        padding-top: 40px;
+    
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+    
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+}
