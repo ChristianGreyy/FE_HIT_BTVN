@@ -66,9 +66,15 @@ body {
 
 .header__nav__items:hover .header__nav__items__absolute {
     display: block;
-    color: red;
+}
+.header__nav__items__absolute:hover {
+    color: #66FFCC;
 
 }
+.header__nav__items:hover .header__nav__items-link {
+    color: #FFCCCC;
+}
+
 
 .header__nav__items__absolute__divst{
     cursor: pointer;
