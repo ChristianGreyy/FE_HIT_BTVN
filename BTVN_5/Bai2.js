@@ -33,7 +33,7 @@ class App{
         if(index === -1) {
             console.log("Invalid id");
         } else {
-            newUsers.splice(index, index + 1);
+            newUsers.splice(index, 1);
         }
     }
 
