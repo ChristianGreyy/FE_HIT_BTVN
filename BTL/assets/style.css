@@ -1,0 +1,159 @@
+.app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+
+}
+.dashboards{
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    background-color: #171022;
+}
+.dashboards-row{
+    height: 100%;
+}
+.col-sm-4{
+
+}
+.dashboards__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.dashboards__left-left{
+
+}
+.dashboards__left-left-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.dashboards__left-center{
+
+}
+.dashboards__left-center-name-music{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.36;
+    color: white; 
+}
+.dashboards__left-center-name-author{
+    color: hsla(0,0%,100%,0.5);
+    font-size: 13px;
+}
+.dashboards__left-right{
+    display: flex;
+}
+.dashboards__left-right-love{
+
+}
+.far{
+
+}
+.fa-heart{
+    color: #670091;
+}
+.dashboards__left-right-settings{
+    color: white;
+    margin-left: 12px;
+
+}
+.fas{
+
+}
+.fa-ellipsis-h{
+
+}
+.dashboards__center{
+
+}
+.dashboards__center-button{
+
+}
+.dashboards__center-button__random{
+
+}
+.fa-random{
+
+}
+.dashboards__center-button__prev{
+
+}
+.fa-step-backward{
+
+}
+.dashboards__center-button__play{
+
+}
+.fa-pause{
+
+}
+.icon-pause{
+
+}
+.{
+
+}
+.fa-play{
+
+}
+.icon-play{
+
+}
+.dashboards__center-button__next{
+
+}
+.fa-step-forward{
+
+}
+.dashboards__center-button__repeat{
+
+}
+.fa-redo{
+
+}
+.dashboards__center-bottom{
+
+}
+.progress{
+
+}
+.container.dashboards{
+
+}
+.col-sm-4.dashboards__left{
+
+}
+.far.fa-heart{
+
+}
+.fas.fa-ellipsis-h{
+
+}
+.col-sm-4.dashboards__center{
+
+}
+.fas.fa-random{
+
+}
+.fas.fa-step-backward{
+
+}
+.fas.fa-pause.icon-pause.{
+
+}
+.fas.fa-play.icon-play.{
+
+}
+.fas.fa-step-forward{
+
+}
+.fas.fa-redo{
+
+}
