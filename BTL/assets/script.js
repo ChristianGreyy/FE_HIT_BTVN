@@ -83,7 +83,7 @@ const app = {
         // set current time
         document.querySelector('.progress').onchange = (e) => {
             let currentTimeMusic = Math.floor(document.querySelector('.progress').value / 300 * audio.duration);
-            audio.currentTime  = currentTimeMusic;
+            audio.currentTime = currentTimeMusic;
         }
 
         // Click PLay or Pause Button
@@ -101,19 +101,29 @@ const app = {
 
         // set current volume
         document.querySelector('.progress-volume').onchange = (e) => {
-            this.currentVolume = document.querySelector('.progress-volume').value / 200;            
+            this.currentVolume = document.querySelector('.progress-volume').value / 200;  
+            // Turn off
+            if(this.currentVolume === 0) {
+                document.querySelector('.dashboards__left__volume').classList.add('dashboards__left__volume--active');
+                document.querySelector('.progress-volume').value = 0;
+            } 
+            // Turn on
+            else {
+                document.querySelector('.dashboards__left__volume').classList.remove('dashboards__left__volume--active');
+                document.querySelector('.progress-volume').value = document.querySelector('.progress-volume').value;
+            }         
         }
     
 
         // Click Volume Button 
         document.querySelector('.dashboards__left__volume').onclick =(e) => {
-            // Turn off
+            // Turning off
             if(document.querySelector('.dashboards__left__volume').classList.contains('dashboards__left__volume--active')) {
                 this.currentVolume = 1;
                 document.querySelector('.progress-volume').value = 200;
                 document.querySelector('.dashboards__left__volume').classList.remove('dashboards__left__volume--active');
             }
-            // Turn on 
+            // Turning on 
             else {
                 console.log("ok")
                 this.currentVolume = 0;
