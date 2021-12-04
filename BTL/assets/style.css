@@ -251,6 +251,19 @@
 
 .progress-volume {
     height: 4px;
+    cursor: pointer;
+}
+
+.fa-volume-mute {
+    display: none;
+}
+
+.dashboards__left__volume--active .fa-volume-mute {
+    display: block;
+}
+
+.dashboards__left__volume--active .fa-volume-up {
+    display: none;
 }
 
 /* MENU */
@@ -399,7 +412,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px 8px;
+    margin: 8px 4px;
     cursor: pointer;
 }
 
