@@ -12,7 +12,7 @@ const app = {
             name: 'Bước qua mùa cô đơn',
             singer: 'Vũ',
             background: './background/buocquamuacodon.jpg',
-            path: '../music/BuocQuaMuaCoDon-Vu-6879419.mp3'
+            path: './music/BuocQuaMuaCoDon-Vu-6879419.mp3'
         }
 
     ],
