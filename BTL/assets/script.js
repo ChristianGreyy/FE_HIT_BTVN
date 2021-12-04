@@ -6,6 +6,8 @@ let buttonDashboard = document.querySelector('.dashboards__center-button__play')
 let audio = document.querySelector('#audio');
 
 const app = {
+    currentIndex: 0,
+    count: 0,
     switch: false,
     music: [
         {
@@ -17,21 +19,61 @@ const app = {
 
     ],
     run: function() {
-        console.log(playButton)
+        let minutes = 0;
+        let seconds = 0;
+        findMusicByIndex = (currentIndex) => {
+            audio.src = this.music[currentIndex].path;
+            document.querySelector('.dashboards__left-left-img').src = this.music[currentIndex].background;
+            document.querySelector('.dashboards__left-center-name-music').innerHTML = this.music[currentIndex].name;
+            document.querySelector('.dashboards__left-center-name-singer').innerHTML = this.music[currentIndex].singer;
+        }
+
+        solveTheTimeLessThan10 = (element) => {
+            if(element < 10) {
+                let string = ""; string += "0";
+                string += element.toString();
+                element = string;
+            }
+            return element;
+        }
+
+        findMusicByIndex(0);
+
+        audio.ontimeupdate = (e) => {
+            // solve curremt time
+            let restore = audio.duration;
+            let currentTimeMusic = Math.floor(audio.currentTime);
+            seconds = currentTimeMusic%60;
+            minutes = Math.floor(currentTimeMusic/60);
+            seconds = solveTheTimeLessThan10(seconds);
+            minutes = solveTheTimeLessThan10(minutes);
+            document.querySelector('.dashboards__center-bottom__time-current').innerHTML = `${minutes}:${seconds}`;
+            
+            // solve duration time 
+            let durationTimeMusic = Math.floor(audio.duration);
+            let durationSeconds = durationTimeMusic ? durationTimeMusic % 60 : 0;
+            let durationMinutes = durationTimeMusic? Math.floor(durationTimeMusic / 60) : 4;
+            durationSeconds = solveTheTimeLessThan10(durationSeconds);
+            durationMinutes = solveTheTimeLessThan10(durationMinutes);
+            document.querySelector('.dashboards__center-bottom__time-end').innerHTML = `${durationMinutes}:${durationSeconds}`;
+        }
+
+        // PLay or Pause
         playButton.onclick = (e) => {
             this.switch = !this.switch;
             buttonDashboard.classList.toggle('dashboards__center-button__play--active', this.switch);
-            audio.src = this.music[0].path;
-            document.querySelector('.dashboards__left-left-img').src = this.music[0].background;
-            document.querySelector('.dashboards__left-center-name-music').innerHTML = this.music[0].name;
-            document.querySelector('.dashboards__left-center-name-singer').innerHTML = this.music[0].singer;
             audio.play();
-        }
+        }   
+
         pauseButton.onclick = (e) => {
             this.switch = !this.switch;
             buttonDashboard.classList.toggle('dashboards__center-button__play--active', this.switch);
             audio.pause();
+
         }
+       
+
+        // 
     }
 }
 
