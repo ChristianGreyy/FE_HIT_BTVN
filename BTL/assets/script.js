@@ -157,7 +157,7 @@ new Chart("myChart", {
       borderColor: "rgba(87, 149, 222, 0.7)",
       fill: false
     },{
-      data: [300,700,2000,5000,6000,4000,4570,5640,6650,6549,5465,4498],
+      data: [300,700,2000,5000,6000,4000,4570,5640,6650,6549,5465,5998],
       backgroundColor: "rgb(58, 195, 165)",
       borderColor: "rgba(58, 195, 165, 0.7)",
       fill: false
