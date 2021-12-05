@@ -137,3 +137,33 @@ const app = {
 
 
 app.run();
+
+
+// THE CHART
+var xValues = ["17:00","19:00","21:00","23:00","01:00","03:00","05:00","7:00","09:00","11:00","13:00","15:00"];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478,4343,5452],
+      backgroundColor: "rgb(227, 80, 80)",
+      borderColor: "rgba(227, 80, 80, 0.7)",
+      fill: false
+    },{
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000,6754,6894],
+      backgroundColor: "rgba(87, 149, 222)",
+      borderColor: "rgba(87, 149, 222, 0.7)",
+      fill: false
+    },{
+      data: [300,700,2000,5000,6000,4000,4570,5640,6650,6549,5465,4498],
+      backgroundColor: "rgb(58, 195, 165)",
+      borderColor: "rgba(58, 195, 165, 0.7)",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});

@@ -1,0 +1,81 @@
+.page__page-3{
+    margin-top: 70px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+}
+
+.page__page-3__overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-image: url('../image/background.jfif');
+    filter: grayscale(1);
+    position: absolute;
+    left: 0;
+}
+
+.page__page-3__alpha {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient(
+    180deg,hsla(0,0%,100%,0) 37%,#170f23);
+}
+
+.page__page-3__alpha2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: .9;
+    z-index: 0;
+    background-image: linear-gradient(180deg,#170f23,#170f23);
+
+
+}
+
+#myChart {
+    position: absolute;
+    top: 0;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+.page__page-3__header{
+    
+
+    /* background-color: black; */
+    /* opacity: 0.1; */
+    display: flex;
+    align-items: center;
+    height: max-content;
+    margin: 36px 0 0 48px;
+}
+.page__page-3__header-titles {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-right: 8px;
+}
+
+.page__page-3__header-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #670091;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fas.fa-play {
+    color: white;
+}
