@@ -353,8 +353,8 @@
 
 .page {
     background-color:#1D1528;
-    /* width: 82%; */
-    flex: 1;
+    width: 81%;
+    /* flex: 1; */
     position: relative;
 }
 
@@ -444,4 +444,5 @@
     border-radius: 50%;
     height: 100%;
 }
+
 
