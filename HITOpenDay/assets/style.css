@@ -747,3 +747,33 @@
 .fas.fa-chevron-left{
 
 }
+
+.footer-item-search{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    background-color: #011C3A;
+    position: relative;
+}
+.footer-item-search-des{
+    
+}
+
+.footer-item-input{
+    width: 90%;
+    height:100%;
+    background-color: #011C3A;
+    border: none;
+    outline:none;
+    position: absolute;
+    right: 0;
+    color: white;
+}       
+.fas.fa-envelope-square{
+
+}
+
+.footer-item-search:hover {
+    border: 1px solid #F47B2A;
+}
