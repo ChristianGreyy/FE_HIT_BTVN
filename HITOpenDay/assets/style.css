@@ -773,7 +773,19 @@
 .fas.fa-envelope-square{
 
 }
-
+/* 
 .footer-item-search:hover {
     border: 1px solid #F47B2A;
+} */
+
+.footer-button {
+    margin-top: 12px;
+    height: 40px;
+    width: 200px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #F47B2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
 }
