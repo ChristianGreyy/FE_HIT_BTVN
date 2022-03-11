@@ -13,24 +13,23 @@ const FetchData = () => {
   }, [page]);
   return (
     <React.Fragment>
-      <button
-        onClick={() => {
-          setPage(page + 5);
-        }}
-      >
-        Fetch data
-      </button>
-
       <div>
         {data &&
           data.map((user) => (
             <React.Fragment>
-              <div key={user.userId}>{user.userId}</div>
+              <div key={user.userId}>{user.id}</div>
               <div key={user.title}>{user.title}</div>
               <div key={user.completed}>user.completed</div>
             </React.Fragment>
           ))}
       </div>
+      <button
+        onClick={() => {
+          setPage(page + 5);
+        }}
+      >
+        Xem tiếp
+      </button>
     </React.Fragment>
   );
 };
